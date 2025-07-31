@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.4s;
+  font-style: italic;
 }
  
 html {
@@ -12,21 +12,28 @@ html {
  
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #c8e0fa;
-  color: #333;
+  background-color: #fbefff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #1b1b1b;
   line-height: 1.6;
   padding: 2rem;
 }
  
 /* ========== Header Banner ========== */
 header {
+  width: 1000px;
   text-align: center;
-  background-color: #8498ad;
+  background-color: #aa84ad;
+  opacity: 60%;
   color: white;
   padding: 2rem;
   border-radius: 10px;
   margin-bottom: 2rem;
-}
+  margin: 0 auto;
+  transition: 0.5s;
+  
+  }
  
 header h1 {
   font-size: 2rem;
@@ -40,21 +47,22 @@ header h1 {
 
 /* ===== side-section, image wrapper =====*/
 .container {
-  display: flex; 
-  align-items: flex-start; 
-  margin: auto;
-  gap: 20px;
-  padding: 10px;
+    display: flex; 
+    align-items: flex-start; 
+    margin: auto;
+    gap: 20px;
+    padding: 10px;
+    flex-direction: row-reverse;
 }
 
 .image-wrapper {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .image-wrapper img {
-  max-width: 200px;
-  height: auto;
-  border-radius: 7px; 
+    max-width: 200px;
+    height: auto;
+    border-radius: 7px; 
 }
 
 .image-wrapper-gif img {
@@ -65,20 +73,21 @@ header h1 {
 
 .side-section {
   flex-grow: 1; 
-  background-color: hsl(221, 100%, 94%);
+  background-color: hsl(279, 100%, 94%);
   padding: 15px;
-  border-left: 5px solid #949494; 
+  border-right: 5px solid #949494; 
+  border-left: none;
   border-radius: 20px;
 }
 
 /*====== About Section ======*/
 .about-text p {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .about-contacts {
   flex-grow: 1; 
-  background-color: hsl(221, 100%, 94%);
+  background-color: hsl(279, 100%, 94%);
   padding: 15px;
   border-top: 5px solid #949494; 
   border-radius: 20px;
@@ -98,8 +107,8 @@ main {
 
 /*====== Headings ======*/
 h2, h3 {
-  color: #282121;
-  margin: center;
+    color: #2821217a;
+    margin: center;
 }
 
 /*====== Navigation ======*/
@@ -114,13 +123,13 @@ nav ul {
  
 nav a {
   text-decoration: none;
-  color: #0066cc;
+  color: #5c00cc;
   font-weight: bold;
   transition: color 0.3s ease;
 }
  
 nav a:hover {
-  color: #004a99;
+  color: #990082;
   text-decoration: underline;
 }
 
@@ -128,7 +137,7 @@ nav a:hover {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #acd4ff;
+  background-color: #dcc9ff;
   max-width: none;
   margin: auto;
   color: white;
@@ -136,21 +145,50 @@ nav a:hover {
   margin-bottom: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: #5c00cc;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #990082;
+    text-decoration: underline;
+}
+
+ul, li {
+    padding: 2px;
+    padding-left: 2px;
+    padding-right: 4px;
+}
+
 /*======== Button =========*/
 button {
   font-size: 1rem;
   padding: 0.8rem 1.2rem;
-  margin: 0.5rem;
+  margin: 10 auto;
   border: none;
   border-radius: 8px;
-  background-color: rgb(111, 200, 255);
+  background-color: rgb(255, 195, 248);
   color: white;
   cursor: pointer;
   transition: 0.2s;
 }
 
 button:hover {
-  background-color: lightblue;
+  background-color: #ec8eff;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+}
+
+/*table*/
+table {
+  border-color: #c1afff;
+  box-shadow: rgb(0, 0, 0);
 }
 
 /*======== Quote =========*/
@@ -172,7 +210,7 @@ button:hover {
 
 .quote-box{
   flex-grow: 1; 
-  background-color: hsl(221, 100%, 94%);
+  background-color: hsl(279, 100%, 94%);
   padding: 15px;
   border-top: 5px solid #949494; 
   border-radius: 20px;

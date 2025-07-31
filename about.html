@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An assignment in creating my own HTML bio">
+        <meta name="keywords" content="Neumont, CSC210, web dev, web development, student, portfolio, HTML5, CSS3">
+        <meta name="author" content="Daniel Morales">
+
+        <!-- The OG section for social media channels. -->
+        <meta property="og:title" content="An assignment in creating my own HTML bio">
+        <meta property="og:description" content="This could be my personal portfolio to showcase my web dev skills and projects">
+        <meta property="og:type" content="website">
+
+        <!-- Links -->
+        <link id="theme-stylesheet" rel="stylesheet" href="styles/style.css">
+        <button id="theme-toggle">Theme Change</button>
+
+        <title>My Portfolio</title>
+    </head>
+
+    <body>
+        <!-- HTML5 Semantic Banner -->
+        <header role="banner" class="header-nav">
+            <div class="banner-container">
+                <h1>Daniel Morales</h1>
+                <p class="tagline">Neumont Student, Soon-to-be Software Engineer</p>
+            </div>
+
+            <!-- Navigation to other pages -->
+            <nav role="navigation" aria-label="Main Navigation">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="home.html" aria-describedby="home-desc">Home</a></li>
+                        <li><a href="skills.html" aria-describedby="skills-desc">My Skills</a></li>
+                        <li><a href="projects.html" aria-describedby="projects-desc">My Projects</a></li>
+                        <li><a href="about.html" aria-describedby="about-desc">About Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </body>
+
+    <main id="main-content" role="main">
+        <div class="about-text">
+            <!-- About section & content -->
+             <section id="about" aria-labelledby="about-heading">
+
+                <div class="container">
+                    <div class="image-wrapper">
+                        <img src="images/20250518_213538.jpg" alt="Daniel Morales">
+                    </div>
+
+                    <div class="side-section">
+                        <h2 id="about-heading">About Me</h2>
+                            
+                        <p>I'm a <a href="https://www.neumont.edu/" target="_blank"><strong>Neumont Student</strong></a> in the <strong>Software Engineering</strong> degree that came from <strong>Texas</strong>.
+                            I plan to graduate by <strong><em>2027</em></strong> and be able to obtain a job in the industry, so I've been 
+                            making projects on my free-time like this one in preparation for the industry.
+                        </p>
+                        <p>
+                            Coming from <strong>Texas</strong> I have been able to learn various new things in the technology field thanks to my peers. Since attending <strong>Neumont</strong>
+                            I have been able to make new connections to further have an understanding in the field I'm going in. Connecting with them helped me in seeing how my vision differs from theirs from different technology fields,
+                            and be able to see my own habits upon seeing someone else's own habits and work and grow from them.
+                        </p>
+                    </div>
+                </div>
+             </section>
+
+             <div class="about-contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li><strong>email: </strong>danielmorales1414@gmail.com</li>
+                    <li><strong>phone #: </strong>832-869-7143</li>
+                </ul>
+             </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <!-- Copyright Footer -->
+        &lt;&lt;&lt; &copy; 2025 <a href="about.html">Daniel Morales</a> All rights reserved&gt;&gt;&gt;
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/style_change.js"></script>
+</html>

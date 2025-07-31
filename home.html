@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An assignment in creating my own HTML bio">
+        <meta name="keywords" content="Neumont, CSC210, web dev, web development, student, portfolio, HTML5, CSS3">
+        <meta name="author" content="Daniel Morales">
+
+        <!-- The OG section for social media channels. -->
+        <meta property="og:title" content="An assignment in creating my own HTML bio">
+        <meta property="og:description" content="This could be my personal portfolio to showcase my web dev skills and projects">
+        <meta property="og:type" content="website">
+
+        <!-- Links -->
+        <link id="theme-stylesheet" rel="stylesheet" href="styles/style.css">
+        <button id="theme-toggle">Theme Change</button>
+
+        <title>My Portfolio</title>
+    </head>
+
+    <body>
+        <!-- HTML5 Semantic Banner -->
+        <header role="banner" class="header-nav">
+            <div class="banner-container">
+                <h1>Home</h1>
+            </div>
+
+
+            <!-- Navigation Bar -->
+                <nav role="navigation" aria-label="Main Navigation">
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="home.html" aria-describedby="home-desc">Home</a></li>
+                            <li><a href="skills.html" aria-describedby="skills-desc">My Skills</a></li>
+                            <li><a href="projects.html" aria-describedby="projects-desc">My Projects</a></li>
+                            <li><a href="about.html" aria-describedby="about-desc">About Me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+    </body>    
+
+    <main id="main-content" role="main">
+        <div class="favorites-text">
+            <div class="quote-box">
+                <h2 id="quote-box">Quote Of The Day</h2>
+                <hr>
+                <div id="quote-box">
+                    <p id="quote-text">Loading quote...</p>
+                    <p id="quote-author"></p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="image-wrapper">
+                    <div class="slideshow">
+                        <img id="slide" src="images/background_image.jpg" alt="Project image">
+                    </div>
+                </div>
+
+                <div class="side-section">
+                    <p>This is a portfolio that shows off my skills of using 
+                        HTML, CSS, and Javascript, but most of all, a place in 
+                        which I can contain all contents of what I've done in my 
+                        past time whether it be my skills, projects, or just about me.
+                    </p>
+                </div>
+                
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <!-- Copyright Footer -->
+        <hr>
+        &lt;&lt;&lt; &copy; 2025 <a href="about.html">Daniel Morales</a> All rights reserved&gt;&gt;&gt;
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/style_change.js"></script>
+</html>
